@@ -1,171 +1,193 @@
 
 import { Box, Text, Flex, Link, HStack, Stack, Button, Image, VStack } from "@chakra-ui/react";
+import Main from "../Main/index";
 
 
 
 
 const Header: React.FC = () => {
   return (
-    <Box background="#2400FF" position='fixed' w='100%' h='100%'>
-
-      <Box mt='20px' w="388px" h="800px" flex-shrink="0" borderRadius="18px" ml='90px'
-        background="linear-gradient(91deg, #0094FF 0.14%, #0059DF 99.5%)"
-        boxShadow="40px 28px 29px 0px rgba(0, 0, 0, 0.25), 0px 0px 34px 10px rgba(0, 0, 0, 0.25) inset"
-        backdropFilter="blur(15px)">
 
 
-        <VStack spacing="20px">
-          <Image w='180px' src="/logo.png" mt="5px" mb="9px" />
+    <Box display='inline-block' mt='20px' w="388px" h="800px" flex-shrink="0" borderRadius="18px" ml='90px'
+      background="linear-gradient(91deg, #0094FF 0.14%, #0059DF 99.5%)"
+      boxShadow="40px 28px 29px 0px rgba(0, 0, 0, 0.25), 0px 0px 34px 10px rgba(0, 0, 0, 0.25) inset"
+      backdropFilter="blur(15px)">
 
-          <Box display="flex" flexDir="row" w="328px" h="59px" flex-shrink="0" borderRadius="16px" // Raio da borda
-            background="linear-gradient(91deg, #0094FF 0.14%, #0059DF 99.5%)" // Estilo de fundo
-            boxShadow="0px 4px 13px 0px rgba(0, 0, 0, 0.25) inset, 0px -4px 13px 0px rgba(0, 0, 0, 0.25) inset, 15px 20px 20px 0px rgba(0, 0, 0, 0.25)">
-            <Flex alignItems='center'>
-              <Image src="/image1.svg" w="70px" mt='12px' />
-              <Link
-                color="#222" // Cor do texto
-                textShadow="0px 4px 4px rgba(0, 0, 0, 0.25)" // Sombra do texto
-                fontFamily="Archivo" // Fonte
-                fontSize="23px" // Tamanho da fonte
-                fontStyle="normal" // Estilo da fonte
-                fontWeight="700" // Peso da fonte
-                lineHeight="normal" // Altura da linha
-              >
-                Home Page
-              </Link>
-            </Flex>
-          </Box>
-          <Box display="flex" flexDir="row" w="328px" h="59px" flex-shrink="0" borderRadius="16px" // Raio da borda
-            background="linear-gradient(91deg, #0094FF 0.14%, #0059DF 99.5%)" // Estilo de fundo
-            boxShadow="0px 4px 13px 0px rgba(0, 0, 0, 0.25) inset, 0px -4px 13px 0px rgba(0, 0, 0, 0.25) inset, 15px 20px 20px 0px rgba(0, 0, 0, 0.25)">
-            <Flex alignItems='center'>
-              <Image src="/image1.svg" w="70px" mt='12px' />
-              <Link
-                color="#fff" // Cor do texto
-                textShadow="0px 4px 4px rgba(0, 0, 0, 0.25)" // Sombra do texto
-                fontFamily="Archivo" // Fonte
-                fontSize="23px" // Tamanho da fonte
-                fontStyle="normal" // Estilo da fonte
-                fontWeight="700" // Peso da fonte
-                lineHeight="normal" // Altura da linha
-              >
-                Dice Royale
-              </Link>
-            </Flex>
-          </Box>
-          <Box display="flex" flexDir="row" w="328px" h="59px" flex-shrink="0" borderRadius="16px" // Raio da borda
-            background="linear-gradient(91deg, #0094FF 0.14%, #0059DF 99.5%)" // Estilo de fundo
-            boxShadow="0px 4px 13px 0px rgba(0, 0, 0, 0.25) inset, 0px -4px 13px 0px rgba(0, 0, 0, 0.25) inset, 15px 20px 20px 0px rgba(0, 0, 0, 0.25)">
-            <Flex alignItems='center'>
-              <Image src="/image1.svg" w="70px" mt='12px' />
-              <Link
-                color="#fff" // Cor do texto
-                textShadow="0px 4px 4px rgba(0, 0, 0, 0.25)" // Sombra do texto
-                fontFamily="Archivo" // Fonte
-                fontSize="23px" // Tamanho da fonte
-                fontStyle="normal" // Estilo da fonte
-                fontWeight="700" // Peso da fonte
-                lineHeight="normal" // Altura da linha
-              >
-                Duck Poker
-              </Link>
-            </Flex>
-          </Box>
-          <Box display="flex" flexDir="row" w="328px" h="59px" flexShrink="0" borderRadius="16px" // Raio da borda
-            background="linear-gradient(91deg, #0094FF 0.14%, #0059DF 99.5%)" // Estilo de fundo
-            boxShadow="0px 4px 13px 0px rgba(0, 0, 0, 0.25) inset, 0px -4px 13px 0px rgba(0, 0, 0, 0.25) inset, 15px 20px 20px 0px rgba(0, 0, 0, 0.25)">
-            <Flex alignItems='center'>
-              <Image src="/image1.svg" w="70px" mt='12px' />
-              <Link
-                color="#fff" // Cor do texto
-                textShadow="0px 4px 4px rgba(0, 0, 0, 0.25)" // Sombra do texto
-                fontFamily="Archivo" // Fonte
-                fontSize="23px" // Tamanho da fonte
-                fontStyle="normal" // Estilo da fonte
-                fontWeight="700" // Peso da fonte
-                lineHeight="normal" // Altura da linha
-              >
-                Naval Battle
-              </Link>
-            </Flex>
-          </Box>
-          <Box mt='30px'
-            w='328px'
-            h='2px'
-            borderRadius='23px'
-            bg='rgba(255, 255, 255, 0.25)'>
-          </Box>
-          <HStack alignItems="center">
-            <Image src="foto-perfil.svg\" mt='8px' />
-            <Text
-              mr='70px'
-              color="#FFF"
-              fontFamily="Antonio"
-              fontSize="22px"
-              font-Style='normal'
-              fontWeight="400"
-              lineHeight="normal"> El'Doido</Text>
 
-            <Box
-              w="96px"
-              h="35px"
-              flexShrink="0"
-              borderRadius="44.089px"
-              bg="var(--AZUL-PRIM, linear-gradient(91deg, #0094FF 0.14%, #0059DF 99.5%))"
-              boxShadow="0px 2.84444px 2.84444px 0px rgba(0, 0, 0, 0.25) inset, 0px -2.84444px 2.84444px 0px rgba(0, 0, 0, 0.25) inset, 10.66667px 14.22222px 14.22222px 0px rgba(0, 0, 0, 0.25)"
+      <VStack spacing="20px">
+        <Image w='180px' src="/logo.png" mt="5px" mb="9px" />
+
+        <Box display="flex" flexDir="row" w="328px" h="59px" flex-shrink="0" borderRadius="16px" // Raio da borda
+          background="linear-gradient(91deg, #0094FF 0.14%, #0059DF 99.5%)" // Estilo de fundo
+          boxShadow="0px 4px 13px 0px rgba(0, 0, 0, 0.25) inset, 0px -4px 13px 0px rgba(0, 0, 0, 0.25) inset, 15px 20px 20px 0px rgba(0, 0, 0, 0.25)">
+          <Flex alignItems='center'>
+            <Image src="/image1.svg" w="70px" mt='12px' />
+            <Link
+              color="#222" // Cor do texto
+              textShadow="0px 4px 4px rgba(0, 0, 0, 0.25)" // Sombra do texto
+              fontFamily="Archivo" // Fonte
+              fontSize="23px" // Tamanho da fonte
+              fontStyle="normal" // Estilo da fonte
+              fontWeight="700" // Peso da fonte
+              lineHeight="normal" // Altura da linha
             >
+              Home Page
+            </Link>
+          </Flex>
+        </Box>
+        <Box display="flex" flexDir="row" w="328px" h="59px" flex-shrink="0" borderRadius="16px" // Raio da borda
+          background="linear-gradient(91deg, #0094FF 0.14%, #0059DF 99.5%)" // Estilo de fundo
+          boxShadow="0px 4px 13px 0px rgba(0, 0, 0, 0.25) inset, 0px -4px 13px 0px rgba(0, 0, 0, 0.25) inset, 15px 20px 20px 0px rgba(0, 0, 0, 0.25)">
+          <Flex alignItems='center'>
+            <Image src="/image1.svg" w="70px" mt='12px' />
+            <Link
+              color="#fff" // Cor do texto
+              textShadow="0px 4px 4px rgba(0, 0, 0, 0.25)" // Sombra do texto
+              fontFamily="Archivo" // Fonte
+              fontSize="23px" // Tamanho da fonte
+              fontStyle="normal" // Estilo da fonte
+              fontWeight="700" // Peso da fonte
+              lineHeight="normal" // Altura da linha
+            >
+              Dice Royale
+            </Link>
+          </Flex>
+        </Box>
+        <Box display="flex" flexDir="row" w="328px" h="59px" flex-shrink="0" borderRadius="16px" // Raio da borda
+          background="linear-gradient(91deg, #0094FF 0.14%, #0059DF 99.5%)" // Estilo de fundo
+          boxShadow="0px 4px 13px 0px rgba(0, 0, 0, 0.25) inset, 0px -4px 13px 0px rgba(0, 0, 0, 0.25) inset, 15px 20px 20px 0px rgba(0, 0, 0, 0.25)">
+          <Flex alignItems='center'>
+            <Image src="/image1.svg" w="70px" mt='12px' />
+            <Link
+              color="#fff" // Cor do texto
+              textShadow="0px 4px 4px rgba(0, 0, 0, 0.25)" // Sombra do texto
+              fontFamily="Archivo" // Fonte
+              fontSize="23px" // Tamanho da fonte
+              fontStyle="normal" // Estilo da fonte
+              fontWeight="700" // Peso da fonte
+              lineHeight="normal" // Altura da linha
+            >
+              Duck Poker
+            </Link>
+          </Flex>
+        </Box>
+        <Box display="flex" flexDir="row" w="328px" h="59px" flexShrink="0" borderRadius="16px" // Raio da borda
+          background="linear-gradient(91deg, #0094FF 0.14%, #0059DF 99.5%)" // Estilo de fundo
+          boxShadow="0px 4px 13px 0px rgba(0, 0, 0, 0.25) inset, 0px -4px 13px 0px rgba(0, 0, 0, 0.25) inset, 15px 20px 20px 0px rgba(0, 0, 0, 0.25)">
+          <Flex alignItems='center'>
+            <Image src="/image1.svg" w="70px" mt='12px' />
+            <Link
+              color="#fff" // Cor do texto
+              textShadow="0px 4px 4px rgba(0, 0, 0, 0.25)" // Sombra do texto
+              fontFamily="Archivo" // Fonte
+              fontSize="23px" // Tamanho da fonte
+              fontStyle="normal" // Estilo da fonte
+              fontWeight="700" // Peso da fonte
+              lineHeight="normal" // Altura da linha
+            >
+              Naval Battle
+            </Link>
+          </Flex>
+        </Box>
 
-
-              <HStack alignItems="center" mt='8px'>
-                <Image w='17px' src='exit.png' ml='8px' />
-                <Text
-                  color="#FFF"
-                  textShadow="0px 2.844444513320923px 2.844444513320923px rgba(0, 0, 0, 0.25)"
-                  fontFamily="Archivo"
-                  fontSize="16px"
-                  fontStyle="normal"
-                  fontWeight='700'
-                  lineHeight='normal'>Go out</Text>
-              </HStack>
-            </Box>
-
-          </HStack>
+        <HStack alignItems="center">
+          <Image src="foto-perfil.svg\" mt='8px' />
+          <Text
+            mr='70px'
+            color="#FFF"
+            fontFamily="Antonio"
+            fontSize="22px"
+            font-Style='normal'
+            fontWeight="400"
+            lineHeight="normal"> El'Doido</Text>
 
           <Box
-            w="328px"
-            h="177px"
-            borderRadius="16px"
-            background="linear-gradient(109deg, #0094FF 31.7%, rgba(0, 148, 255, 0.45) 61.39%)"
-            boxShadow="0px 8px 11px 0px rgba(0, 0, 0, 0.25) inset, 15px 20px 20px 0px rgba(0, 0, 0, 0.25)"
-            display="flex"
-            alignItems="flex-end" // Alinhar verticalmente à parte de baixo
-            position="relative"
+            w="96px"
+            h="35px"
+            flexShrink="0"
+            borderRadius="44.089px"
+            bg="var(--AZUL-PRIM, linear-gradient(91deg, #0094FF 0.14%, #0059DF 99.5%))"
+            boxShadow="0px 2.84444px 2.84444px 0px rgba(0, 0, 0, 0.25) inset, 0px -2.84444px 2.84444px 0px rgba(0, 0, 0, 0.25) inset, 10.66667px 14.22222px 14.22222px 0px rgba(0, 0, 0, 0.25)"
           >
-            <VStack ml='10px' display="flex" alignItems="flex-start" my='auto' color="#FFF"
-              textShadow="0px 2.844444513320923px 2.844444513320923px rgba(0, 0, 0, 0.25)"
-              fontFamily="Archivo"
-              fontSize="17px"
-              fontStyle="normal"
-              fontWeight="700"
-              lineHeight="normal">
-              <Link>My Profile</Link>
-              <Link>Balance</Link>
-              <Link>Notification</Link>
-            </VStack>
-            <Image
-              ml='110px'
-              src="/mario.png"
-              alt="Mario"
-              position="absolute"
-            />
+
+
+            <HStack alignItems="center" mt='8px'>
+              <Image w='17px' src='exit.png' ml='8px' />
+              <Text
+                color="#FFF"
+                textShadow="0px 2.844444513320923px 2.844444513320923px rgba(0, 0, 0, 0.25)"
+                fontFamily="Archivo"
+                fontSize="16px"
+                fontStyle="normal"
+                fontWeight='700'
+                lineHeight='normal'>Go out</Text>
+            </HStack>
           </Box>
-        </VStack>
+
+        </HStack>
+
+        <Box
+          w="328px"
+          h="177px"
+          borderRadius="16px"
+          background="linear-gradient(109deg, #0094FF 31.7%, rgba(0, 148, 255, 0.45) 61.39%)"
+          boxShadow="0px 8px 11px 0px rgba(0, 0, 0, 0.25) inset, 15px 20px 20px 0px rgba(0, 0, 0, 0.25)"
+          display="flex"
+          alignItems="flex-end" // Alinhar verticalmente à parte de baixo
+          position="relative"
+        >
+          <VStack ml='10px' display="flex" alignItems="flex-start" my='auto' color="#FFF"
+            textShadow="0px 2.844444513320923px 2.844444513320923px rgba(0, 0, 0, 0.25)"
+            fontFamily="Archivo"
+            fontSize="17px"
+            fontStyle="normal"
+            fontWeight="700"
+            lineHeight="normal">
+            <Link>My Profile</Link>
+            <Link>Balance</Link>
+            <Link>Notification</Link>
+          </VStack>
+          <Image
+            ml='110px'
+            src="/mario.png"
+            alt="Mario"
+            position="absolute"
+          />
+        </Box>
+      </VStack>
+      <Flex alignItems='center' justifyContent='center' mt='15px'>
+        <HStack color="#FFF"
+          textShadow="0px 2.844444513320923px 2.844444513320923px rgba(0, 0, 0, 0.25)"
+          fontFamily="Archivo"
+          fontSize="20px"
+          fontStyle="normal"
+          fontWeight="500"
+          lineHeight="normal"
+          spacing='13px'>
+          <Link>About us</Link>
+          <Link>Payments</Link>
+          <Link>Policy</Link>
+          <Link>Terms</Link>
+        </HStack>
 
 
 
+      </Flex>
+      <Flex alignItems='center' justifyContent='center' mt='10px'>
+        <Text color="#FFF"
+          fontFamily="Antonio"
+          fontSize="15px"
+          fontStyle="normal"
+          fontWeight="400"
+          lineHeight="normal">© 2023 Trusty Crypto Gaming. All Rights Reserved. </Text>
+      </Flex>
 
-      </Box>
-    </Box >
+
+    </Box>
+
+
+
   );
 };
 
